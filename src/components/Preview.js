@@ -8,11 +8,13 @@ const Preview = (props) => {
   });
   return (
     <React.Fragment>
-      <div
-        dangerouslySetInnerHTML={{ __html: marked(props.enteredText) }}
-        id="preview"
-        className={styles.Preview}
-      ></div>
+      <div className={styles.Preview}>
+        <div className={styles.ToolBar}>Preview</div>
+        <div className={styles.PreviewWindow}
+          dangerouslySetInnerHTML={{ __html: marked(props.enteredText) }}
+          id="preview"
+        ></div>
+      </div>
     </React.Fragment>
   );
 };

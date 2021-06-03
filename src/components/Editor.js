@@ -5,13 +5,12 @@ const Editor = (props) => {
   return (
     <React.Fragment>
       <div className={styles.Editor}>
+        <div className={styles.ToolBar}>Editor</div>
         <textarea
           id="editor"
           onChange={(event) => {
             props.onChange(event.target.value);
           }}
-          rows="15"
-          cols="99"
           value={props.default}
         ></textarea>
       </div>
