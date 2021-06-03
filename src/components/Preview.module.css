@@ -1,12 +1,8 @@
 .Preview {
-  display: flex;
+  display: block;
   text-align: justify;
   width: 48%;
   margin: auto;
+  padding: 5px;
   border: 1px solid black;
-}
-
-.Preview p {
-    margin: 0;
-    height: 40rem;
 }
